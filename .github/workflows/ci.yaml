@@ -11,6 +11,6 @@ jobs:  # specifies list of github jobs
       run:
         echo "Hello, world again!"
       -name : run python script
-       run:
+      run:
          pip install -r requirements.txt
          python ci.py
