@@ -1,13 +1,12 @@
 name : Github Actions Demo
 
-on: [push]
+on: [push]  # specifies which action will trigger the github actions
 
-jobs:
+jobs:  # specifies list of github jobs
   my_first_job:
-
-    runs-on: ubuntu-latest
-  
+    runs-on: ubuntu-latest  # OS
     steps:
-    - name: hello
+      -uses: actions/checkout@v3  # used to clone the contents of repo into the actions so that it have access to files to execute
+      -name: hello # name of the action
       run:
         echo "Hello, world again!"
