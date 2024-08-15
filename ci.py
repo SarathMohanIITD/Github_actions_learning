@@ -1,3 +1,3 @@
-import numpy as np
+import wandb
 
 print(np.__version__)
