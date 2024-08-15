@@ -11,6 +11,8 @@ jobs:  # specifies list of github jobs
       - name: hello # name of the action
         run:
           echo "Hello, world again!"
+      
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run ci.py script
