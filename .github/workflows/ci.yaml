@@ -6,11 +6,11 @@ jobs:  # specifies list of github jobs
   my_first_job:
     runs-on: ubuntu-latest  # OS
     steps:
-      -uses: actions/checkout@v3  # used to clone the contents of repo into the actions so that it have access to files to execute
-      -name: hello # name of the action
-      run:
+      - uses: actions/checkout@v3  # used to clone the contents of repo into the actions so that it have access to files to execute
+      - name: hello # name of the action
+        run:
         echo "Hello, world again!"
-      -name : run python script
-      run:
+      - name : run python script
+        run:
          pip install -r requirements.txt
          python ci.py
